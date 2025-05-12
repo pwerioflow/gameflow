@@ -40,7 +40,7 @@ export default function TestimonialsSection() {
   }
 
   return (
-    <section className="w-full py-24 bg-black text-white">
+    <section id="stories" className="w-full py-24 bg-black text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">

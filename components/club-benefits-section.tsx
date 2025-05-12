@@ -46,7 +46,7 @@ export default function ClubBenefitsSection() {
   const parallaxOffset = isInView ? (scrollPosition - sectionTop) * 0.4 : 0
 
   return (
-    <section ref={sectionRef} className="w-full py-24 bg-gray-900 text-white relative overflow-hidden">
+    <section id="clubs" ref={sectionRef} className="w-full py-24 bg-gray-900 text-white relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-start gap-12">
           {/* Left content - scrolls normally */}

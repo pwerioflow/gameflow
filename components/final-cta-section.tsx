@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function FinalCTASection() {
   return (
-    <section className="w-full py-24 bg-gradient-to-b from-gray-900 to-black text-white relative">
+    <section id="contact" className="w-full py-24 bg-gradient-to-b from-gray-900 to-black text-white relative">
       <div className="absolute inset-0 z-0">
         <div className="relative h-full w-full">
           <Image src="/images/squash-court.png" alt="Squash court" fill className="object-cover opacity-20" />
