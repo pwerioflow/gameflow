@@ -11,7 +11,7 @@ const experienceCards = [
     description: "Scan, tap, and play - no paperwork needed.",
     icon: QrCode,
     video: "/videos/checkin.mp4",
-    poster: "/images/club-manager.png",
+    poster: "/images/checkin-poster.png",
   },
   {
     id: "scoreboard",
@@ -123,11 +123,12 @@ export default function PlayerExperienceSection() {
           <p className="text-xl text-white/80 max-w-2xl mx-auto">Arrive. Scan. Play. No paper. No confusion.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {/* Card container with horizontal scroll */}
+        <div className="flex flex-col md:flex-row gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide scroll-smooth">
           {experienceCards.map((card) => (
             <div
               key={card.id}
-              className="relative overflow-hidden rounded-2xl shadow-md h-80 group cursor-pointer"
+              className="flex-shrink-0 w-full md:w-[24%] snap-start relative overflow-hidden rounded-2xl shadow-md h-80 group cursor-pointer"
               onMouseEnter={() => handleMouseEnter(card.id)}
               onMouseLeave={() => handleMouseLeave(card.id)}
               onTouchStart={() => handleMouseEnter(card.id)} // For mobile devices
@@ -152,7 +153,7 @@ export default function PlayerExperienceSection() {
                 muted
                 loop
                 playsInline
-                preload="none" // Changed from metadata to none for better performance
+                preload="none"
                 poster={card.poster}
               >
                 <source src={card.video} type="video/mp4" />

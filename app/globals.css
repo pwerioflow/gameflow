@@ -79,6 +79,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Custom styles for snap scrolling */
+.snap-x {
+  scroll-snap-type: x mandatory;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
+
 /* Custom transitions for player experience cards */
 .player-card-transition {
   transition: all 0.5s ease-in-out;
