@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils"
 
 // Define the navigation items
 const navItems = [
-  { name: "Mission", href: "#mission" },
   { name: "Players", href: "#players" },
   { name: "Clubs", href: "#clubs" },
   { name: "Coaches", href: "#coaches" },

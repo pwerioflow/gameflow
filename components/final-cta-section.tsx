@@ -21,8 +21,10 @@ export default function FinalCTASection() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button variant="outline" size="lg" className="w-full sm:w-auto">
-            Book a Demo
+          <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
+            <a href="https://cal.com/gameflow.tech/30min" target="_blank" rel="noopener noreferrer">
+              Book a Demo
+            </a>
           </Button>
 
           <Button variant="gradient" size="lg" className="w-full sm:w-auto">
