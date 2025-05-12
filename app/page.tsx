@@ -2,6 +2,7 @@ import HeroSection from "@/components/hero-section"
 import MissionSection from "@/components/mission-section"
 import PlayerExperienceSection from "@/components/player-experience-section"
 import ClubBenefitsSection from "@/components/club-benefits-section"
+import CoachesSection from "@/components/coaches-section"
 import TestimonialsSection from "@/components/testimonials-section"
 import FinalCTASection from "@/components/final-cta-section"
 import Footer from "@/components/footer"
@@ -14,6 +15,7 @@ export default function Home() {
       <MissionSection />
       <PlayerExperienceSection />
       <ClubBenefitsSection />
+      <CoachesSection />
       <PhotoGallery />
       <TestimonialsSection />
       <FinalCTASection />

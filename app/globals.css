@@ -107,3 +107,9 @@ html {
     transform: translateY(0);
   }
 }
+
+/* Smooth parallax transitions */
+.parallax-image {
+  will-change: transform;
+  backface-visibility: hidden;
+}

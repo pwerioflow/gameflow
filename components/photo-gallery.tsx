@@ -37,9 +37,16 @@ export default function PhotoGallery() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Experience <span className="text-green-400">GameFlow</span> in Action
           </h2>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto">
-            See how GameFlow transforms sports venues around the world
-          </p>
+          <div className="max-w-3xl mx-auto">
+            <p className="text-lg text-white/80 mb-4">
+              GameFlow transforms how your members interact with your facilities. From seamless check-ins to automated
+              court management, we handle the logistics so you can focus on creating memorable experiences.
+            </p>
+            <p className="text-lg text-white/80">
+              Our platform adapts to your unique club rules and preferences, ensuring a perfect fit for your operation
+              while providing the data insights you need to grow and improve.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
