@@ -118,7 +118,7 @@ export default function PhotoGallery() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Experience <span className="text-green-400">GameFlow</span> in Action
+            Experience <span className="text-gradient">GameFlow</span> in Action
           </h2>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-white/80 mb-4">
@@ -173,8 +173,8 @@ export default function PhotoGallery() {
 
               {/* Content */}
               <div className="absolute inset-0 z-30 p-8 flex flex-col justify-between">
-                <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mb-4">
-                  <card.icon className="h-8 w-8 text-green-400" />
+                <div className="w-16 h-16 bg-gradient-to-r from-[#027CFF] to-[#89F94F]/50 rounded-full flex items-center justify-center mb-4">
+                  <card.icon className="h-8 w-8 text-white" />
                 </div>
 
                 <div>

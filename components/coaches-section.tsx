@@ -88,15 +88,15 @@ export default function CoachesSection() {
           {/* Right content - scrolls normally */}
           <div className="md:w-1/2 z-10 order-1 md:order-2">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              For <span className="text-green-400">Coaches</span>
+              For <span className="text-gradient">Coaches</span>
             </h2>
 
             <p className="text-xl mb-8 text-white/80">Elevate your training sessions and player development.</p>
 
             <div className="space-y-8">
               <div className="flex items-start gap-4">
-                <div className="mt-1 bg-green-500/20 p-2 rounded-lg">
-                  <Clock className="h-6 w-6 text-green-400" />
+                <div className="mt-1 bg-gradient-to-r from-[#027CFF] to-[#89F94F]/50 p-2 rounded-lg">
+                  <Clock className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Efficient Scheduling</h3>
@@ -107,8 +107,8 @@ export default function CoachesSection() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="mt-1 bg-green-500/20 p-2 rounded-lg">
-                  <LucideActivity className="h-6 w-6 text-green-400" />
+                <div className="mt-1 bg-gradient-to-r from-[#027CFF] to-[#89F94F]/50 p-2 rounded-lg">
+                  <LucideActivity className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Performance Tracking</h3>
@@ -119,8 +119,8 @@ export default function CoachesSection() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="mt-1 bg-green-500/20 p-2 rounded-lg">
-                  <Award className="h-6 w-6 text-green-400" />
+                <div className="mt-1 bg-gradient-to-r from-[#027CFF] to-[#89F94F]/50 p-2 rounded-lg">
+                  <Award className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Training Programs</h3>

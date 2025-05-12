@@ -118,7 +118,7 @@ export default function PlayerExperienceSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            The <span className="text-green-400">Player</span> Experience
+            The <span className="text-gradient">Player</span> Experience
           </h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto">Arrive. Scan. Play. No paper. No confusion.</p>
         </div>
@@ -164,8 +164,8 @@ export default function PlayerExperienceSection() {
 
               {/* Content */}
               <div className="absolute inset-0 z-30 p-8 flex flex-col justify-between">
-                <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mb-4">
-                  <card.icon className="h-8 w-8 text-green-400" />
+                <div className="w-16 h-16 bg-gradient-to-r from-[#027CFF] to-[#89F94F]/50 rounded-full flex items-center justify-center mb-4">
+                  <card.icon className="h-8 w-8 text-white" />
                 </div>
 
                 <div>
@@ -186,7 +186,7 @@ export default function PlayerExperienceSection() {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-xl font-light italic text-green-400">
+          <p className="text-xl font-light italic text-gradient">
             Track your spot. Share your wins. Join the community.
           </p>
         </div>

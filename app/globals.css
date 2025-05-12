@@ -123,3 +123,46 @@ html {
 .font-sans {
   font-family: var(--font-inter), system-ui, sans-serif;
 }
+
+/* Text gradient effect */
+.text-gradient {
+  background: linear-gradient(90deg, #027cff 0%, #89f94f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Button styles */
+.btn-primary {
+  background: #027cff;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #89f94f;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #027cff 0%, #89f94f 100%);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+  background: #89f94f;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline:hover {
+  background: #89f94f;
+  border-color: #89f94f;
+}

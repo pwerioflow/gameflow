@@ -44,14 +44,14 @@ export default function TestimonialsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            What Our <span className="text-green-400">Community</span> Says
+            What Our <span className="text-gradient">Community</span> Says
           </h2>
         </div>
 
         <div className="max-w-4xl mx-auto relative">
           <button
             onClick={prevTestimonial}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-gray-800/50 hover:bg-gray-800 p-2 rounded-full"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-gray-800/50 hover:bg-[#89F94F] transition-colors duration-300 p-2 rounded-full"
             aria-label="Previous testimonial"
           >
             <ChevronLeft className="h-6 w-6" />
@@ -65,8 +65,8 @@ export default function TestimonialsSection() {
               {testimonials.map((testimonial) => (
                 <div key={testimonial.id} className="w-full flex-shrink-0 px-12">
                   <div className="bg-gray-800/30 p-10 rounded-xl text-center">
-                    <div className="mx-auto mb-6 bg-green-500/20 p-3 rounded-full w-fit">
-                      <Quote className="h-6 w-6 text-green-400" />
+                    <div className="mx-auto mb-6 bg-gradient-to-r from-[#027CFF] to-[#89F94F]/50 p-3 rounded-full w-fit">
+                      <Quote className="h-6 w-6 text-white" />
                     </div>
 
                     <p className="text-xl md:text-2xl font-light italic mb-8">"{testimonial.quote}"</p>
@@ -93,7 +93,7 @@ export default function TestimonialsSection() {
 
           <button
             onClick={nextTestimonial}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-gray-800/50 hover:bg-gray-800 p-2 rounded-full"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-gray-800/50 hover:bg-[#89F94F] transition-colors duration-300 p-2 rounded-full"
             aria-label="Next testimonial"
           >
             <ChevronRight className="h-6 w-6" />
@@ -104,7 +104,9 @@ export default function TestimonialsSection() {
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full ${index === currentIndex ? "bg-green-400" : "bg-gray-600"}`}
+                className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+                  index === currentIndex ? "bg-gradient-to-r from-[#027CFF] to-[#89F94F]" : "bg-gray-600"
+                }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}

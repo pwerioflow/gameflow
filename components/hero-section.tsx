@@ -22,7 +22,7 @@ export default function HeroSection() {
       <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6">
           GameFlow. <span className="block md:inline">Organize the game.</span>{" "}
-          <span className="text-green-400">Unleash the emotion.</span>
+          <span className="text-gradient">Unleash the emotion.</span>
         </h1>
 
         <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
@@ -30,16 +30,11 @@ export default function HeroSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button
-            onClick={() => setVideoOpen(true)}
-            variant="outline"
-            size="lg"
-            className="bg-transparent border-white text-white hover:bg-white/10 group"
-          >
+          <Button onClick={() => setVideoOpen(true)} variant="outline" size="lg" className="group">
             <Play className="mr-2 h-4 w-4 group-hover:text-white" /> Watch the Video
           </Button>
 
-          <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">
+          <Button variant="gradient" size="lg">
             Try GameFlow Now <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>

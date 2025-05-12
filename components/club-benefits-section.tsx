@@ -52,15 +52,15 @@ export default function ClubBenefitsSection() {
           {/* Left content - scrolls normally */}
           <div className="md:w-1/2 z-10">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              For <span className="text-green-400">Clubs</span> & Managers
+              For <span className="text-gradient">Clubs</span> & Managers
             </h2>
 
             <p className="text-xl mb-8 text-white/80">Turn your sports spaces into unforgettable experiences.</p>
 
             <div className="space-y-8">
               <div className="flex items-start gap-4">
-                <div className="mt-1 bg-green-500/20 p-2 rounded-lg">
-                  <Calendar className="h-6 w-6 text-green-400" />
+                <div className="mt-1 bg-gradient-to-r from-[#027CFF] to-[#89F94F]/50 p-2 rounded-lg">
+                  <Calendar className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Smart Court Management</h3>
@@ -71,8 +71,8 @@ export default function ClubBenefitsSection() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="mt-1 bg-green-500/20 p-2 rounded-lg">
-                  <BarChart3 className="h-6 w-6 text-green-400" />
+                <div className="mt-1 bg-gradient-to-r from-[#027CFF] to-[#89F94F]/50 p-2 rounded-lg">
+                  <BarChart3 className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Insightful Analytics</h3>
@@ -83,8 +83,8 @@ export default function ClubBenefitsSection() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="mt-1 bg-green-500/20 p-2 rounded-lg">
-                  <Settings className="h-6 w-6 text-green-400" />
+                <div className="mt-1 bg-gradient-to-r from-[#027CFF] to-[#89F94F]/50 p-2 rounded-lg">
+                  <Settings className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Rule Automation</h3>

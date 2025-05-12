@@ -82,7 +82,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="font-audiowide text-2xl">
             <span className="text-white">Game</span>
-            <span className="text-[#007BFF]">Flow</span>
+            <span className="text-gradient">Flow</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -92,8 +92,8 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-[#007BFF]",
-                  activeSection === item.name ? "text-[#007BFF]" : "text-white/80",
+                  "text-sm font-medium transition-colors hover:text-[#027CFF]",
+                  activeSection === item.name ? "text-gradient" : "text-white/80",
                 )}
                 onClick={handleLinkClick}
               >
@@ -104,10 +104,10 @@ export default function Navbar() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="text-white border-white hover:bg-white/10">
+            <Button variant="outline" size="sm">
               Log In
             </Button>
-            <Button size="sm" className="bg-[#007BFF] hover:bg-[#0056b3] text-white">
+            <Button variant="gradient" size="sm">
               Get Started
             </Button>
           </div>
@@ -134,7 +134,7 @@ export default function Navbar() {
                   href={item.href}
                   className={cn(
                     "text-base font-medium transition-colors py-2",
-                    activeSection === item.name ? "text-[#007BFF]" : "text-white/80",
+                    activeSection === item.name ? "text-gradient" : "text-white/80",
                   )}
                   onClick={handleLinkClick}
                 >
@@ -142,10 +142,12 @@ export default function Navbar() {
                 </Link>
               ))}
               <div className="flex flex-col space-y-3 pt-4 border-t border-white/10">
-                <Button variant="outline" className="text-white border-white hover:bg-white/10 w-full">
+                <Button variant="outline" className="w-full">
                   Log In
                 </Button>
-                <Button className="bg-[#007BFF] hover:bg-[#0056b3] text-white w-full">Get Started</Button>
+                <Button variant="gradient" className="w-full">
+                  Get Started
+                </Button>
               </div>
             </nav>
           </div>
