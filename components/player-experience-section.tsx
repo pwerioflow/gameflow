@@ -11,7 +11,7 @@ const experienceCards = [
     description: "Scan, tap, and play - no paperwork needed.",
     icon: QrCode,
     video: "/videos/checkin.mp4",
-    poster: "/images/checkin-poster.png",
+    poster: "/images/club-manager.png",
   },
   {
     id: "scoreboard",
