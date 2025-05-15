@@ -34,7 +34,7 @@ const experienceCards = [
     title: "Player Community",
     description: "Connect with players and join local events.",
     icon: Heart,
-    video: "/videos/community.mp4",
+    video: "/videos/arena.mp4",
     poster: "/images/community-poster.png",
   },
 ]
